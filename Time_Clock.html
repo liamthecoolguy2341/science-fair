@@ -1,0 +1,23 @@
+<!DOTYPE html>
+<html>
+    <head>
+        <h1 clas="title">Time And Date</h1>
+        <style>
+           .title {
+               color: lightcoral;
+           } 
+        </style>
+    </head>
+    <body>
+        <p id="t+_d"></p>
+        <script language="javascript">
+            function td() {
+                document.getElementById('t+_d').innerHTML = new Date()
+            }
+            td();
+            setInterval( function () {
+                td();
+            }, 1000);
+        </script>
+    </body>
+</html>
